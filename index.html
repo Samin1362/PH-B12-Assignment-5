@@ -51,7 +51,7 @@
         <div
           class="flex items-center gap-[10px] py-[11px] px-[35px] bg-[#41ff6b1a] rounded-[50px]"
         >
-          <h1 class="font-bold">100</h1>
+          <h1 id="coin-amount" class="font-bold">100</h1>
           <div class="max-w-[30px]"><img src="./assets/coin.png" alt="" /></div>
         </div>
         <div
@@ -77,7 +77,9 @@
     </section>
 
     <!-- main section  -->
-    <main class="max-w-[1800px] mx-auto my-[50px] flex flex-col-reverse md:flex-row gap-[30px] p-[10px]">
+    <main
+      class="max-w-[1800px] mx-auto my-[50px] flex flex-col-reverse md:flex-row gap-[30px] p-[10px]"
+    >
       <!-- cards section  -->
       <div class="cards md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-[30px]">
         <div class="card flex flex-col bg-white p-[32px] rounded-lg">
@@ -90,7 +92,7 @@
           </div>
           <h1 class="text-2xl font-bold">National Emergency Number</h1>
           <p class="text-[18px] mb-[16px]">National Emergency</p>
-          <h1 class="roboto text-[32px] font-bold">999</h1>
+          <h2 class="roboto text-[32px] font-bold">999</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">All</p>
           </div>
@@ -101,8 +103,9 @@
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
             </div>
+            <!-- call button  -->
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -118,7 +121,7 @@
           </div>
           <h1 class="text-2xl font-bold">Police Helpline Number</h1>
           <p class="text-[18px] mb-[16px]">Police</p>
-          <h1 class="roboto text-[32px] font-bold">999</h1>
+          <h2 class="roboto text-[32px] font-bold">999</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">Police</p>
           </div>
@@ -130,7 +133,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -146,7 +149,7 @@
           </div>
           <h1 class="text-2xl font-bold">Fire Service Number</h1>
           <p class="text-[18px] mb-[16px]">Fire Service</p>
-          <h1 class="roboto text-[32px] font-bold">999</h1>
+          <h2 class="roboto text-[32px] font-bold">999</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">Fire</p>
           </div>
@@ -158,7 +161,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -174,7 +177,7 @@
           </div>
           <h1 class="text-2xl font-bold">Ambulance Service</h1>
           <p class="text-[18px] mb-[16px]">Ambulance</p>
-          <h1 class="roboto text-[32px] font-bold">1994-999999</h1>
+          <h2 class="roboto text-[32px] font-bold">1994-999999</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">Health</p>
           </div>
@@ -186,7 +189,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -202,7 +205,7 @@
           </div>
           <h1 class="text-2xl font-bold">Women & Child Helpline</h1>
           <p class="text-[18px] mb-[16px]">Women & Child Helpline</p>
-          <h1 class="roboto text-[32px] font-bold">109</h1>
+          <h2 class="roboto text-[32px] font-bold">109</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">Help</p>
           </div>
@@ -214,7 +217,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -230,7 +233,7 @@
           </div>
           <h1 class="text-2xl font-bold">Anti-Corruption Helpline</h1>
           <p class="text-[18px] mb-[16px]">Anti-Corruption</p>
-          <h1 class="roboto text-[32px] font-bold">106</h1>
+          <h2 class="roboto text-[32px] font-bold">106</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">Govt.</p>
           </div>
@@ -242,7 +245,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -258,7 +261,7 @@
           </div>
           <h1 class="text-2xl font-bold">Electricity Helpline</h1>
           <p class="text-[18px] mb-[16px]">Electricity Outage</p>
-          <h1 class="roboto text-[32px] font-bold">16216</h1>
+          <h2 class="roboto text-[32px] font-bold">16216</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">Electricity</p>
           </div>
@@ -270,7 +273,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -286,7 +289,7 @@
           </div>
           <h1 class="text-2xl font-bold">Brac Helpline</h1>
           <p class="text-[18px] mb-[16px]">Brac</p>
-          <h1 class="roboto text-[32px] font-bold">16445</h1>
+          <h2 class="roboto text-[32px] font-bold">16445</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">NGO</p>
           </div>
@@ -298,7 +301,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -314,7 +317,7 @@
           </div>
           <h1 class="text-2xl font-bold">Bangladesh Railway Helpline</h1>
           <p class="text-[18px] mb-[16px]">Bangladesh Railway</p>
-          <h1 class="roboto text-[32px] font-bold">163</h1>
+          <h2 class="roboto text-[32px] font-bold">163</h2>
           <div class="bg-[#F2F2F2] mb-[16px] w-fit py-2 px-[16px] rounded-lg">
             <p class="text-[18px]">Travel</p>
           </div>
@@ -326,7 +329,7 @@
               <p class="text-[16px]">Copy</p>
             </div>
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
+              class="btn-call flex items-center gap-2 py-[12px] px-[50px] w-fit bg-[#00A63E] hover:bg-green-700 rounded-lg"
             >
               <i class="fa-solid fa-phone text-white"></i>
               <p class="text-white">Call</p>
@@ -349,7 +352,12 @@
           </div>
         </div>
         <!-- content  -->
-        <div></div>
+        <div
+          id="call-history-content"
+          class="flex flex-col gap-2 items-center mt-[16px] justify-between p-[16px] bg-[#FAFAFA]"
+        >
+
+        </div>
       </div>
     </main>
 
