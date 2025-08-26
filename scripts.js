@@ -1,4 +1,4 @@
-const callHistory = [];
+let callHistory = [];
 
 // hearts counter
 let heartsClickedCount = 0;
@@ -16,7 +16,7 @@ for (const callButton of callButtons) {
   callButton.addEventListener("click", function () {
     const coins = parseInt(document.getElementById("coin-amount").innerText);
 
-    if (coins > 20) {
+    if (coins >= 20) {
       document.getElementById("coin-amount").innerText = coins - 20;
       const parentDiv = this.parentElement.parentElement;
       const serviceName = parentDiv.querySelector("h1");
@@ -44,7 +44,7 @@ for (const callButton of callButtons) {
             <div>
               <h1 class="text-[18px]">${call.date}</h1>
             </div>
-`;
+        `;
         document.getElementById("call-history-content").appendChild(div);
       }
 
@@ -57,3 +57,9 @@ for (const callButton of callButtons) {
   });
 }
 
+
+// clear button feature 
+document.getElementById("btn-clear").addEventListener("click", function () {
+  document.getElementById("call-history-content").innerHTML = "";
+  callHistory = [];
+})
