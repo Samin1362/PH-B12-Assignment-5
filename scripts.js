@@ -35,7 +35,7 @@ for (const callButton of callButtons) {
       document.getElementById("call-history-content").innerHTML = "";
       for (const call of callHistory) {
         const div = document.createElement("div");
-        div.classList.add("w-full", "flex", "items-center", "justify-between", "mb-[8px]", "bg-[#FAFAFA]")
+        div.classList.add("w-full", "flex", "items-center", "justify-between", "bg-[#FAFAFA]", "p-[16px]")
         div.innerHTML = `
             <div>
               <h1 class="text-[18px] font-bold">${call.name}</h1>
@@ -63,3 +63,14 @@ document.getElementById("btn-clear").addEventListener("click", function () {
   document.getElementById("call-history-content").innerHTML = "";
   callHistory = [];
 })
+
+
+// copy button feature 
+let copyClickCounter = 0;;
+const copies = document.getElementsByClassName("btn-copy");
+for (const copy of copies){
+  copy.addEventListener("click", function () {
+    copyClickCounter++;
+    document.getElementById("copy-counter").innerText = copyClickCounter;
+  })
+}

@@ -57,7 +57,7 @@
         <div
           class="flex items-center gap-[10px] py-[11px] px-[15px] md:px-[35px] bg-[#00A63E] rounded-[50px]"
         >
-          <h1 class="font-bold text-white">2 Copy</h1>
+          <h1 class="font-bold text-white"><span id="copy-counter">0</span> Copy</h1>
         </div>
       </div>
     </nav>
@@ -82,7 +82,7 @@
     >
       <!-- cards section  -->
       <div class="cards md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-[30px]">
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/emergency.png" alt="" />
@@ -98,7 +98,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -112,7 +112,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#DFEFFF] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/police.png" alt="" />
@@ -127,7 +127,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -140,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/fire-service.png" alt="" />
@@ -155,7 +155,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -168,7 +168,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/ambulance.png" alt="" />
@@ -183,7 +183,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -196,7 +196,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/emergency.png" alt="" />
@@ -211,7 +211,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -224,7 +224,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/emergency.png" alt="" />
@@ -239,7 +239,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -252,7 +252,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/emergency.png" alt="" />
@@ -267,7 +267,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -280,7 +280,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/emergency.png" alt="" />
@@ -295,7 +295,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -308,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="card flex flex-col bg-white p-[32px] rounded-lg">
+        <div class="card flex flex-col bg-white p-[32px] shadow-[0_2px_3px_rgba(0,0,0,0.15)] rounded-lg">
           <div class="flex items-center justify-between mb-[16px]">
             <div class="max-w-[60px] bg-[#FFE3E2] p-[14px] rounded-lg">
               <img class="w-[32px]" src="./assets/emergency.png" alt="" />
@@ -323,7 +323,7 @@
           </div>
           <div class="flex justify-center gap-2">
             <div
-              class="flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
+              class="btn-copy flex items-center gap-2 py-[12px] px-[50px] w-fit hover:bg-gray-400 border-2 border-gray-200 rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               <p class="text-[16px]">Copy</p>
@@ -355,8 +355,10 @@
         <!-- content  -->
         <div
           id="call-history-content"
-          class="flex flex-col gap-2 items-center mt-[16px] justify-between p-[16px] bg-[#FAFAFA]"
-        ></div>
+          class="flex flex-col gap-2 items-center mt-[16px] justify-between p-[16px] bg-white"
+        >
+      
+      </div>
       </div>
     </main>
 
