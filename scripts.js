@@ -75,6 +75,6 @@ for (const copy of copies){
     const parentDiv = this.parentElement.parentElement;
     const serviceNumber = parentDiv.querySelector("h2").innerText;
     navigator.clipboard.writeText(serviceNumber);
-
+    alert("Service Number Copied")
   })
 }
