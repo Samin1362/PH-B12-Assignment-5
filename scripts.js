@@ -72,5 +72,9 @@ for (const copy of copies){
   copy.addEventListener("click", function () {
     copyClickCounter++;
     document.getElementById("copy-counter").innerText = copyClickCounter;
+    const parentDiv = this.parentElement.parentElement;
+    const serviceNumber = parentDiv.querySelector("h2").innerText;
+    navigator.clipboard.writeText(serviceNumber);
+
   })
 }
